@@ -25,12 +25,12 @@ function addTask(task,id,done,remove){
     }
     const realized = done ? check : uncheck;
     const LINE = done ? mark : '';
-    const task = `<li id="task" class="task">
+    task = `<li id="task" class="task">
                     <i id="${id}" data="done" class="bi ${realized}"></i>
                     <p class="complete-task text ${LINE}">${task}</p>
                     <i id="${id}" data="remove" class="bi bi-trash3"></i>
                 </li>`
-                tasks.insertAdjacentHTML("beforeend", taskHTML);
+                tasks.insertAdjacentHTML("beforeend", task);
 };
 
 function completeTask(element){
@@ -85,7 +85,7 @@ if(data){
 };
 
 function loadList(array){
-    array.forEach( item => 
+    array.forEach( 
         function (item){
             addTask(item.name, item.id, item.done, item.remove);
     });
