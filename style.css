@@ -1,0 +1,95 @@
+:root{
+    --primary: #03566f;
+    --secondary: #237b8a;
+    --third: #4696a4;
+    /* degradado */
+    --text-size: 1.5rem;
+    --color-text: #d8cfc3; 
+    --color-list: #f9ebd9;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(#260d33,#003f69, #106b87); 
+    height: 100vh;
+    color: var(--color-text);
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: var(--primary);
+    border-radius: 20px;
+}
+
+.heading{
+    padding: 10px 0 5px 0;
+}
+
+.add{
+    background-color: var(--secondary);
+    border-radius: 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 70px;
+}
+
+.add input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    padding-left: 10px;
+}
+
+#input::placeholder{
+    font-size: 1.1rem;
+    color: var(--color-text);
+}
+
+.add i{
+    font-size: 28px;
+    color: var(--color-text);
+}
+
+.add i:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/* task section */
+
+.tasks-container h2{
+    margin-bottom: 20px;
+}
+
+.tasks{
+    font-size: 20px;
+}
+
+.tasks li{
+    background-color: var(--third);
+    border-radius: 15px;
+    padding: 10px;
+    color: var(--color-list);
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task i:hover{
+    color: #002944;
+}
+
+.mark{
+    text-decoration: line-through;
+    color: #002944;
+}
